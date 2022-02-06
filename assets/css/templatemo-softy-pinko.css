@@ -1058,7 +1058,7 @@ parallax & home seperator
   background-size: cover;
   background-position: center center;
   /* background-image: url(../images/work-process-bg.png); */
-  background-color: var(--appviolet);
+  /* background-color: var(--appviolet); */
   z-index: 2;
   top: -20%;
   left: -20%;
