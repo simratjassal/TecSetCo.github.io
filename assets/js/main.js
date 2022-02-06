@@ -64,3 +64,27 @@ function eventTimer(){
       clearInterval(x);
     }
   }, 1000);
+
+  function teamdata(){
+    
+    var temp=`<div class="col-md-3">
+            <div class="team-card">
+                <img src="assets/images/img.jpg" alt="" class="team-img" />
+                <h5 class="team-text" style="font-size: 1.25rem">
+                  Person Person
+                </h5>
+                <h6 class="team-text">Founder, Codeflow</h6>
+                <div class="team-description" style="padding-top: 5px">
+                    <a href="https://linkedin.com/in/" class="teamlinkes"><i class="fab fa-linkedin" style="font-size: 25px"></i></a>
+                    <a href="https://github.com/" class="teammemb-git"><i class="fab fa-github" style="font-size: 25px"></i></a>
+                </div>
+            </div>
+          </div>`;
+
+      var output=document.getElementById("teamdata");
+
+      for(i=0;i<4;i++){
+        output.innerHTML+=temp;
+      }      
+  }
+  teamdata();

@@ -77,11 +77,15 @@ header, nav, section, article, aside, footer, hgroup {
 * {
   box-sizing: border-box;
 }
-
+:root{
+  --appblack:#262626;
+  --appviolet:#8666cf;
+  --appwhite:rgb(236, 236, 236);
+}
 html, body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  background-color: #fff;
+  background-color: var(--appwhite);
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -112,7 +116,7 @@ ul {
 .timeline {
   position: relative;
   width: 100%;
-  background: #262626;
+  background:var(--appblack);;
   /* max-width: 1140px; */
   margin: 0 auto;
   padding: 15px 0;
@@ -204,7 +208,7 @@ ul {
   height: 40px;
   padding: 9px 0;
   top: calc(50% - 20px);
-  background: #643ce7;
+  background: var(--appviolet);
   border: 2px solid #ffffff;
   border-radius: 40px;
   text-align: center;
@@ -223,7 +227,7 @@ ul {
 
 .containertimeline .contenttimeline {
   padding: 30px 90px 30px 30px;
-  background: #774dda;
+  background: var(--appviolet);
   position: relative;
   border-radius: 500px 500px 500px 500px;
 }
@@ -299,7 +303,7 @@ global styles
 */
 html,
 body {
-  background: #fff;
+  background: var(--appblack);
   font-family: "Raleway", sans-serif;
 }
 
@@ -339,7 +343,7 @@ body {
   font-weight: 500;
   font-size: 24px;
   line-height: 42px;
-  color: #1e1e1e;
+  color: var(--appwhite);
   letter-spacing: 0.25px;
   margin-bottom: 30px;
   position: relative;
@@ -352,7 +356,7 @@ body {
 .center-heading .section-title {
   font-weight: 500;
   font-size: 28px;
-  color: #1e1e1e;
+  color: var(--appwhite);
   letter-spacing: 1.75px;
   line-height: 38px;
   margin-bottom: 20px;
@@ -366,7 +370,7 @@ body {
   text-align: center;
   font-weight: 400;
   font-size: 16px;
-  color: #777;
+  color: var(--appwhite);
   line-height: 28px;
   letter-spacing: 1px;
   margin-bottom: 50px;
@@ -586,13 +590,12 @@ header
 }
 
 .header-area .main-nav .logo {
-  float: left;
-  margin-top: 37px;
+  float: left;  
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  margin-left: 30px;  
+  margin-left: 30px;    
 }
 
 .header-area .main-nav .logo img {
@@ -831,25 +834,28 @@ header
 welcome
 --------------------------------------------- 
 */
-.welcome-area {
+/* .welcome-area {
   overflow: hidden;
   position: relative;
-  display: flex;
-  /* align-items: left;
-  justify-content: left; */
+  display: flex;  
   background-image: url(../images/banner-bg.png);
+  background-color: var(--appviolet);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
   height: 100vh;
+} */
+
+.welcome-area{
+  height: 100vh;
+  background-color: var(--appviolet);
 }
 
 .welcome-area .header-text {
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-55%);
-  text-align: left;
-  /* margin-left: 80px; */
+  text-align: left;  
   width: 100%;
 }
 
@@ -1051,7 +1057,8 @@ parallax & home seperator
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(../images/work-process-bg.png);
+  /* background-image: url(../images/work-process-bg.png); */
+  background-color: var(--appviolet);
   z-index: 2;
   top: -20%;
   left: -20%;

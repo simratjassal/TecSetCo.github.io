@@ -7,7 +7,7 @@
     color: whitesmoke;
 }
 .hackathonname{
-    font-size: 5rem;
+    font-size: 4em;
     /* padding-bottom: 30px; */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 0 0 10px white;
@@ -23,8 +23,13 @@
     font-weight: 600;
     
 }
+:root{
+    --appblack:#262626;
+    --appviolet:#8666cf;
+    --appwhite:rgb(236, 236, 236);
+  }
 .hackathonlogo{
-    height: 200px;
+    height: 300px;
     /* filter: drop-shadow(0 0 0.5rem white); */
     transition: 0.3s;    
 }
@@ -32,12 +37,9 @@
     transition: 0.3s;
     filter: drop-shadow(0 0 1rem white);
 }
-@media(min-width: 768px) {
-    .hackathondate{
-        margin-top: 180px;
-    }
+@media(max-width: 768px) {  /* when small screen   */
     .hackathonlogo{
-        height:300px;
+        height:100px;
     }
 }
 #welcome{
@@ -84,9 +86,27 @@
 }
 .timer{
     border-top: none;    
-    background-color: red;
+    background-color: #ff589e;
+    box-shadow: 0 0 10px whitesmoke;
     margin:10px;
     font-size: 1rem;
     line-height: 50px;
     border-radius: 20px;
+}
+.logo{
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+}
+.heading{
+    color:var(--appviolet);
+}
+.makemeblack{
+    background-color: var(--appblack);
+}
+.makemeviolet{
+    background-color: var(--appviolet);
+}
+.makemewhite{
+    background-color: var(--appwhite);
 }
