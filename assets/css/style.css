@@ -110,3 +110,13 @@
 .makemewhite{
     background-color: var(--appwhite);
 }
+.connectteam .fa{
+    margin-top: 10px;
+    background-color: var(--appwhite);
+    box-shadow: 0 0 10px black;
+    border-radius: 100%;
+    padding: 10px;
+    height: 30px;
+    line-height: 10px;
+    width: 30px;
+}

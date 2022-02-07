@@ -66,17 +66,23 @@ var x = setInterval(function () {
 
 function teamdisplay() {
   var temp = `<div class="col-md-3">
-            <div class="team-card">
-                <img src="assets/images/img.jpg" alt="" class="team-img" />
-                <h5 class="team-text" style="font-size: 1.25rem">
-                  Person Person
-                </h5>
-                <h6 class="team-text">Founder, Codeflow</h6>
-                <div class="team-description" style="padding-top: 5px">
-                    <a href="https://linkedin.com/in/" class="teamlinkes"><i class="fab fa-linkedin" style="font-size: 25px"></i></a>
-                    <a href="https://github.com/" class="teammemb-git"><i class="fab fa-github" style="font-size: 25px"></i></a>
-                </div>
-            </div>
+  <div class="a-box">
+  <div class="img-container">
+    <div class="img-inner">
+      <div class="inner-skew">
+        <img src="assets/images/hackathonlogo.png">
+      </div>
+    </div>
+  </div>
+  <div class="text-container">
+    <h3>My Name</h3>
+    <div>
+      My Description My Description My Description My Description My Description
+  </div>  
+  <div class="connectteam">
+      <a href="#"><i class="fa fa-linkedin"></i></a>  
+  </div>  
+</div>
           </div>`;
 
   var output = document.getElementById("teamsdisplay");
