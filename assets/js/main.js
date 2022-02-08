@@ -99,8 +99,7 @@ function themesdisplay() {
       var temp = `<div class="col-lg-4 col-md-6 col-sm-12">
         <div class="team-item">
           <h3 class="themesheading">${themesdata[i]["name"]}</h3>
-            <div class="team-content">
-                <img src="${themesdata[i]["image"]}" alt="">
+            <div class="team-content">                
                 <p>${themesdata[i]["description"]}</p>
             </div>
         </div>
@@ -173,7 +172,23 @@ var output = document.getElementById("sponsorsdisplay");
   }
 }
 
+function communitypartnerdisplay(){
+  var out='';
+  for(i=0;i<communitydata.length;i++){
+      var temp = `<div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="team-item">          
+            <div class="communitypartnerlogo">                
+                <img src="${communitydata[i]["image"]}">                 
+            </div>
+        </div>
+      </div>`;
 
+      out+=temp;
+  }
+
+  var output = document.getElementById("communitypatnerdisplay");
+  output.innerHTML = out;
+}
 function prizesdisplay(){
   var temp=` <div class="col-lg-4 col-md-6 col-sm-12 container-body" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.3s">
   <div class = "prize-container">
@@ -202,4 +217,5 @@ showsponsors();
 judgesdisplay();
 mentorsdisplay();
 prizesdisplay();
+communitypartnerdisplay();
 

@@ -104,10 +104,11 @@ body{
     color:var(--appviolet);
 }
 .makemeblack{
-    background-color: var(--appblack) !important;
+    /* background-image: radial-gradient(circle, #292929, #202020, #181818, #0f0f0f, #000000); */
+    background-color: var(--appblack);
 }
-.makemeviolet{
-    background-color: var(--appviolet);
+.makemeviolet{    
+    background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
 }
 .makemewhite{
     background-color: var(--appwhite);
@@ -125,4 +126,9 @@ body{
 .themesheading{
     text-align: center;
     padding-top: 30px;
+}
+
+.communitypartnerlogo img{
+    padding-top: 20px;
+    width:80%;
 }

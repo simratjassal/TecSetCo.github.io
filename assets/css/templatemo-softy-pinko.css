@@ -1,32 +1,4 @@
-/*
 
-Softy Pinko
-
-https://templatemo.com/tm-535-softy-pinko
-
-*/
-/* ---------------------------------------------
-Table of contents
-------------------------------------------------
-01. font & reset css
-02. reset
-03. global styles
-04. header
-05. welcome
-06. features
-07. team
-08. pricing
-09. blog
-10. contact
-11. footer
-12. preloader
-
---------------------------------------------- */
-/* 
----------------------------------------------
-font & reset css
---------------------------------------------- 
-*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
 /* 
 ---------------------------------------------
@@ -116,7 +88,7 @@ ul {
 .timeline {
   position: relative;
   width: 100%;
-  background:var(--appblack);;
+  /* background-image: radial-gradient(circle, #292929, #202020, #181818, #0f0f0f, #000000); */
   /* max-width: 1140px; */
   margin: 0 auto;
   padding: 15px 0;
@@ -208,7 +180,7 @@ ul {
   height: 40px;
   padding: 9px 0;
   top: calc(50% - 20px);
-  background: var(--appviolet);
+  background-image:linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
   border: 2px solid #ffffff;
   border-radius: 40px;
   text-align: center;
@@ -227,7 +199,7 @@ ul {
 
 .containertimeline .contenttimeline {
   padding: 30px 90px 30px 30px;
-  background: var(--appviolet);
+  background-image:linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
   position: relative;
   border-radius: 500px 500px 500px 500px;
 }
@@ -303,7 +275,7 @@ global styles
 */
 html,
 body {
-  background: var(--appblack);
+  background-color: var(--appblack);
   font-family: "Raleway", sans-serif;
 }
 
@@ -848,7 +820,6 @@ welcome
 
 .welcome-area{
   height: 100vh;
-  background-color: var(--appviolet);
 }
 
 .welcome-area .header-text {
@@ -1349,9 +1320,9 @@ team
 }
 
 .team-item .team-content {
-  text-align: left;
+  text-align: justify;
   overflow: hidden;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .team-item .team-content .team-info {
@@ -1644,7 +1615,7 @@ footer
 --------------------------------------------- 
 */
 footer {
-  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  background-image: radial-gradient(circle, #292929, #202020, #181818, #0f0f0f, #000000);
   padding-top: 30px;
 }
 
