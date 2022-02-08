@@ -1351,6 +1351,7 @@ team
 .team-item .team-content {
   text-align: left;
   overflow: hidden;
+  height: 400px;
 }
 
 .team-item .team-content .team-info {

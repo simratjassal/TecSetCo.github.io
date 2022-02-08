@@ -93,20 +93,26 @@ function teamdisplay() {
 }
 
 function themesdisplay() {
-  var temp = `<div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="team-item">
-        <div class="team-content">
-            <i><img src="assets/images/testimonial-icon.png" alt=""></i>
-            <p>Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio.</p>            
+
+  var out='';
+  for(i=0;i<themesdata.length;i++){
+      var temp = `<div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="team-item">
+          <h3 class="themesheading">${themesdata[i]["name"]}</h3>
+            <div class="team-content">
+                <img src="${themesdata[i]["image"]}" alt="">
+                <p>${themesdata[i]["description"]}</p>
+            </div>
         </div>
-    </div>
-</div>`;
+      </div>`;
+
+      out+=temp;
+  }
 
   var output = document.getElementById("themesdisplay");
-  for (i = 0; i < 4; i++) {
-    output.innerHTML += temp;
-  }
+  output.innerHTML += out;
 }
+
 function judgesdisplay() {
   var temp = `<div class="col-lg-4 col-md-6 col-sm-12">
     <div class="team-item">
