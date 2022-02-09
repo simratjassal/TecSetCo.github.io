@@ -29,7 +29,7 @@
   border-radius : 15px;
 }
 .prize-container .card:hover {
-  height : 350px;      
+  height : 400px;      
 }
 
 
@@ -45,6 +45,7 @@
 .prize-container .card .image img {
   max-width : 100%;
   border-radius : 15px; 
+  height: 300px;
 }
 
 .prize-container .card .content {

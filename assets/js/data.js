@@ -64,7 +64,7 @@ var teamdata=[
 
 var prizesdata=[
   // {"category":"","description":"To be announced","image":""},
-  {"category":"First","description":"To be announced","image":"https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"},
-  {"category":"Second","description":"To be announced","image":"https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"},
-  {"category":"Third","description":"To be announced","image":"https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"},
+  {"category":"First","description":"To be announced","image":"assets/images/prize/1.jpg"},
+  {"category":"Second","description":"To be announced","image":"assets/images/prize/2.jpg"},
+  {"category":"Third","description":"To be announced","image":"assets/images/prize/3.jpg"},
 ]
