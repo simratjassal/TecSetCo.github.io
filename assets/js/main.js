@@ -65,31 +65,32 @@ var x = setInterval(function () {
 }, 1000);
 
 function teamdisplay() {
-  var temp = `<div class="col-md-3">
-  <div class="a-box">
-  <div class="img-container">
-    <div class="img-inner">
-      <div class="inner-skew">
-        <img src="assets/images/hackathonlogo.png">
+  var out='';
+  for(i=0;i<teamdata.length;i++){
+    var temp = `<div class="col-md-4">
+    <div class="a-box">
+    <div class="img-container">
+      <div class="img-inner">
+        <div class="inner-skew">
+          <img src="${teamdata[i]["image"]}">
+        </div>
       </div>
     </div>
+    <div class="text-container">
+      <h3>${teamdata[i]["name"]}</h3>
+      <div>
+        ${teamdata[i]["description"]}
+    </div>  
+    <div class="connectteam">
+        <a href="${teamdata[i]["linkedin"]}"><i class="fa fa-linkedin"></i></a>  
+    </div>  
   </div>
-  <div class="text-container">
-    <h3>My Name</h3>
-    <div>
-      My Description My Description My Description My Description My Description
-  </div>  
-  <div class="connectteam">
-      <a href="#"><i class="fa fa-linkedin"></i></a>  
-  </div>  
-</div>
-          </div>`;
+            </div></div>`;
+      out+=temp;
+  }
 
   var output = document.getElementById("teamsdisplay");
-
-  for (i = 0; i < 4; i++) {
-    output.innerHTML += temp;
-  }
+    output.innerHTML += out;
 }
 
 function themesdisplay() {
@@ -190,32 +191,34 @@ function communitypartnerdisplay(){
   output.innerHTML = out;
 }
 function prizesdisplay(){
-  var temp=` <div class="col-lg-4 col-md-6 col-sm-12 container-body" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.3s">
-  <div class = "prize-container">
-      <div class = "card">
-        <div class = "image">
-          <img href = "#" src =" https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg">
-        </div>
-        <div class = "content">
-          <h3>This is content</h3>
-          <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-        </div>
+var out='';
+  for(i=0;i<prizesdata.length;i++){
+    var temp=` <div class="col-lg-4 col-md-6 col-sm-12 container-body" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.3s">
+    <div class = "prize-container">
+        <div class = "card">
+          <div class = "image">
+            <img src ="${prizesdata[i]["image"]}">
+          </div>
+          <div class = "content">
+            <h3>${prizesdata[i]["category"]}</h3>
+            <p>${prizesdata[i]["description"]}</p>
+          </div>
+        </div>    
       </div>    
-    </div>    
-</div>`;
+  </div>`;
 
-var output = document.getElementById("prizesdisplay");
-  for (i = 0; i < 4; i++) {
-    output.innerHTML += temp;
+      out+=temp;
   }
+var output = document.getElementById("prizesdisplay");
+    output.innerHTML = out;
 }
 
 //call function
 teamdisplay();
 themesdisplay();
-showsponsors();
-judgesdisplay();
-mentorsdisplay();
+// showsponsors();
+// judgesdisplay();
+// mentorsdisplay();
 prizesdisplay();
 communitypartnerdisplay();
 

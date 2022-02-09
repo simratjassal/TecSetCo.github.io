@@ -252,7 +252,7 @@ ul {
   .containertimeline.left .date,
   .containertimeline.right .date {
     right: auto;
-    left: 15px;
+    left: 4px;
   }
 
   .containertimeline.left .icon,
@@ -263,7 +263,7 @@ ul {
 
   .containertimeline.left .contenttimeline,
   .containertimeline.right .contenttimeline {
-    padding: 30px 30px 30px 90px;
+    padding: 15px 25px 15px 80px;
     border-radius: 500px 500px 500px 500px;
   }
 }
@@ -1684,6 +1684,7 @@ footer .copyright {
   display: inline-block;
   width: 240px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .img-container {
@@ -1692,11 +1693,13 @@ footer .copyright {
     overflow: hidden;
     border-radius: 0px 0px 20px 20px;
     display: inline-block;
+    box-shadow: 0 10px 20px -20px black;
 }
 
 .img-container img {    
     height: 220px;
-    margin: 0 auto;
+    position: relative;
+    right: 5%;
 }
 
 .inner-skew {
@@ -1705,7 +1708,7 @@ footer .copyright {
     overflow: hidden;
     padding: 0px;
     font-size: 0px;
-    margin: 30px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
     background: #c8c2c2;
     height: 250px;
     width: 200px;

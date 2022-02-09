@@ -1,200 +1,257 @@
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
-.header-text{
-    margin-top: 100px;
+.header-text {
+  margin-top: 100px;
 }
-.hackathondate{
-    font-size: 1.5rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: whitesmoke;
+.hackathondate {
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: whitesmoke;
 }
-.hackathonname{
-    font-size: 3.3em;
-    /* padding-bottom: 30px; */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 0 0 10px white;
-    font-weight: 500;
-    color: whitesmoke;
+.hackathonname {
+  font-size: 3.3em;
+  /* padding-bottom: 30px; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-shadow: 0 0 10px white;
+  font-weight: 500;
+  color: whitesmoke;
 }
-.welcomebtn{
-    border: 2px white solid;
-    width: 200px !important;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    font-weight: 600;    
+.welcomebtn {
+  border: 2px white solid;
+  width: 200px !important;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 600;
 }
-:root{
-    --appblack:#262626;
-    --appviolet:#8666cf;
-    --appwhite:rgb(236, 236, 236);
+:root {
+  --appblack: #262626;
+  --appviolet: #8666cf;
+  --appwhite: rgb(236, 236, 236);
+}
+.hackathonlogo {
+  height: 300px;
+  /* filter: drop-shadow(0 0 0.5rem white); */
+  transition: 0.3s;
+}
+.hackathonlogo:hover {
+  transition: 0.3s;
+  filter: drop-shadow(0 0 1rem white);
+}
+@media (max-width: 768px) {
+  /* when small screen   */
+  .hackathonlogo {
+    height: 100px;
   }
-.hackathonlogo{
-    height: 300px;
-    /* filter: drop-shadow(0 0 0.5rem white); */
-    transition: 0.3s;    
 }
-.hackathonlogo:hover{
-    transition: 0.3s;
-    filter: drop-shadow(0 0 1rem white);
+#welcome {
+  margin-bottom: 50px;
 }
-@media(max-width: 768px) {  /* when small screen   */
-    .hackathonlogo{
-        height:100px;
-    }
+.organizedby {
+  margin-top: -10px;
 }
-#welcome{
-    margin-bottom: 50px;
+.poweredby {
+  padding-bottom: 20px;
 }
-.organizedby{
-    margin-top: -10px;        
-}
-.poweredby{            
-    padding-bottom: 20px;
-}
-.poweredby, .organizedby{
-    font-size: 1.2rem;
-    text-align: left;        
-    color: whitesmoke;
-    margin-left: 65px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.poweredby,
+.organizedby {
+  font-size: 1.2rem;
+  text-align: left;
+  color: whitesmoke;
+  margin-left: 65px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Animation */
-.floating { 
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
 }
- 
+
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
-.count{
-    color:whitesmoke;    
-    border-collapse: separate;
-    border-spacing: 10px;
-    width: 50%;
-    margin: 0 auto;
+
+.count {
+  color: whitesmoke;
+  border-collapse: separate;
+  border-spacing: 10px;
+  width: 100%;
+  margin: 0 auto;
+  table-layout:fixed;
 }
 .count tr {
-    text-align: center;    
-}
-.timer{
-    border-top: none;    
-    background-color: #ff589e;
-    box-shadow: 0 0 10px whitesmoke;
-    margin:10px;
-    font-size: 1rem;
-    line-height: 50px;
-    border-radius: 20px;
-}
-.logo{
-    text-decoration: none;
-    color:black;
-    font-weight: 600;
-}
-.heading{
-    color:var(--appviolet);
-}
-.makemeblack{
-    /* background-image: radial-gradient(circle, #292929, #202020, #181818, #0f0f0f, #000000); */
-    background-color: var(--appblack);
-}
-.makemeviolet{    
-    background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
-}
-.makemewhite{
-    background-color: var(--appwhite);
-}
-.connectteam .fa{
-    margin-top: 10px;
-    background-color: var(--appwhite);
-    box-shadow: 0 0 10px black;
-    border-radius: 100%;
-    padding: 10px;
-    height: 30px;
-    line-height: 10px;
-    width: 30px;
-}
-.themesheading{
-    text-align: center;
-    padding-top: 30px;
+  text-align: center;
 }
 
-.communitypartnerlogo img{
-    padding-top: 20px;
-    width:80%;
+.timer {
+  border-top: none;
+  background-color: #ff589e;
+  box-shadow: 0 0 10px whitesmoke;  
+  font-size: 1rem;
+  line-height: 50px;
+  border-radius: 20px;  
+}
+@media(max-width: 768px){
+    .timer{
+        font-size: 0.5rem;
+    }
+}
+.countdown{
+    font-weight: 600;
+    display: block;
+    font-size: 1.5rem;  
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.heading {
+  color: var(--appviolet);
+}
+.makemeblack {
+  /* background-image: radial-gradient(circle, #292929, #202020, #181818, #0f0f0f, #000000); */
+  background-color: var(--appblack);
+}
+.makemeviolet {
+  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+}
+.makemewhite {
+  background-color: var(--appwhite);
+}
+.connectteam .fa {
+  margin-top: 10px;
+  background-color: var(--appwhite);
+  box-shadow: 0 0 10px black;
+  border-radius: 100%;
+  padding: 10px;
+  height: 30px;
+  line-height: 10px;
+  width: 30px;
+}
+.themesheading {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.communitypartnerlogo img {
+  padding-top: 20px;
+  width: 80%;
 }
 #preloader {
-    overflow: hidden;
-    background-image: radial-gradient(circle, #292929, #202020, #181818, #0f0f0f, #000000);
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: fixed;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    color: #fff;
+  overflow: hidden;
+  background-image: radial-gradient(
+    circle,
+    #292929,
+    #202020,
+    #181818,
+    #0f0f0f,
+    #000000
+  );
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.content {
+  position: relative;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 4em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 0.5px var(--appwhite);
+}
+
+.content h2:nth-child(2) {
+  color: var(--appwhite);
+  animation: preloaderanimation 1.5s ease-in-out infinite;
+}
+
+@keyframes preloaderanimation {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 50%,
+      16% 34%,
+      33% 50%,
+      54% 70%,
+      70% 61%,
+      90% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
   }
 
-.content {    
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      39% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.btn-shine{
+    text-shadow: 0 0 10px white;
+    padding: 10px;
+    margin: 0 auto;
     position: relative;
-  }
-  
-  .content h2 {
-    color: #fff;
-    font-size: 4em;
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
-  
-  .content h2:nth-child(1) {
-    color: transparent;
-    -webkit-text-stroke: 0.5px var(--appwhite);
-  }
-  
-  .content h2:nth-child(2) {
-    color: var(--appwhite);
-    animation: animate 1.5s ease-in-out infinite;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
   }
   
   @keyframes animate {
-    0%,
-    100% {
-      clip-path: polygon(
-        0% 50%,
-        16% 34%,
-        33% 50%,
-        54% 70%,
-        70% 61%,
-        90% 59%,
-        100% 52%,
-        100% 100%,
-        0% 100%
-      );
+    0% {
+      background-position: -500%;
     }
-  
-    50% {
-      clip-path: polygon(
-        0% 60%,
-        39% 65%,
-        34% 66%,
-        51% 62%,
-        67% 50%,
-        84% 45%,
-        100% 46%,
-        100% 100%,
-        0% 100%
-      );
+    100% {
+      background-position: 500%;
     }
   }

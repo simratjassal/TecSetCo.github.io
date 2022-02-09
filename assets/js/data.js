@@ -50,4 +50,21 @@ var communitydata=[
     {"image":"assets/images/communitypartners/GDSC Model Institute of Engineering and Technology horizontal color.png"},
     {"image":"assets/images/communitypartners/GDSC Bharati Vidyapeeth College of Engineering horizontal color.png"},
     {"image":"assets/images/communitypartners/GDSC DAV Institute of Engineering and Technology horizontal color.png"},
+    {"image":"assets/images/communitypartners/GDSC Dhronacharya College of Engineering horizontal color.png"},    
+    {"image":"assets/images/communitypartners/GDSC Sikkim Manipal Institute of Technology horizontal color.png"},
+    {"image":"assets/images/communitypartners/GDSC G H Raisoni College of Engineering horizontal color.png"},
+]
+
+var teamdata=[
+  // {"name":"", "description":"","image":"assets/images/team/","linkedin":""},
+  {"name":"TecSetCo", "description":"Organization","image":"assets/images/team/logo.jpeg","linkedin":"https://www.linkedin.com/company/tecsetco"},
+  {"name":"Vaibhav Arora", "description":"Founder TecSetCo","image":"assets/images/team/vaibhav.jpeg","linkedin":"https://www.linkedin.com/in/vaibhavarora102/"},
+  {"name":"Rajinderpal Singh", "description":"Co-Founder TecSetCo","image":"assets/images/team/sairish.jpg","linkedin":"https://www.linkedin.com/in/rajinderpalsingh2001/"},
+]
+
+var prizesdata=[
+  // {"category":"","description":"To be announced","image":""},
+  {"category":"First","description":"To be announced","image":"https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"},
+  {"category":"Second","description":"To be announced","image":"https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"},
+  {"category":"Third","description":"To be announced","image":"https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"},
 ]
