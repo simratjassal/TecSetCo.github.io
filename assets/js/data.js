@@ -60,6 +60,7 @@ var teamdata=[
   {"name":"TecSetCo", "description":"Organization","image":"assets/images/team/logo.jpeg","linkedin":"https://www.linkedin.com/company/tecsetco"},
   {"name":"Vaibhav Arora", "description":"Founder TecSetCo","image":"assets/images/team/vaibhav.jpeg","linkedin":"https://www.linkedin.com/in/vaibhavarora102/"},
   {"name":"Rajinderpal Singh", "description":"Co-Founder TecSetCo","image":"assets/images/team/sairish.jpg","linkedin":"https://www.linkedin.com/in/rajinderpalsingh2001/"},
+  {"name":"Simratjot Singh", "description":"Technical Analyst TecSetCo","image":"assets/images/team/simrat.jpg","linkedin":"https://www.linkedin.com/in/simratjot-singh/"},
 ]
 
 var prizesdata=[
